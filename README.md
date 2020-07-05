@@ -1,16 +1,11 @@
 # textfieldtest
 
-A new Flutter application.
+A flutter project to show uneven behavior( possible bug ) between Material Texfied and CupertinoTexfield, when appling a text maminpulation to its TextfieldController in `onChanged:` callback, and the workaround to make them beave the same.
 
-## Getting Started
+## Problem:
 
-This project is a starting point for a Flutter application.
+When assign a modified text to Material Textfield controller to display it in the Texfield, in this case inputted text gets checked and modified to only accept time charcters adding `:`
 
-A few resources to get you started if this is your first Flutter project:
+ at proper position, cursor stays at first position, making the inputted text showing backwards. Not so in CupertinoTexfield.  
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
