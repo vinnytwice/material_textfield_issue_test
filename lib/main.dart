@@ -102,6 +102,11 @@ class _MyHomePageState extends State<MyHomePage> {
                       onChanged: (value) {
                         setState(() {
                           textfield2 = validateTimeFormat(value);
+                          c2.text = validateTimeFormat(value);
+
+                          // workaround for cursor at the end of the text
+                          c2.selection = TextSelection.fromPosition(
+                              TextPosition(offset: c2.text.length));
                         });
                       },
                     )
