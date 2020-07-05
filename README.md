@@ -5,6 +5,6 @@ When appling a text maminpulation to its `TextEditingController` in `onChanged:`
 
 ## Problem:
 
-When assign a modified text to `TextEditingController` to display it in the `Material Texfield` , in this case input text gets checked and modified to only accept time charcters adding `:` at proper position, `Material Textfield` cursor stays at first position, making the inputted text showing backwards. Not so in `CupertinoTexfield`.  
+When assign a modified text to `TextEditingController` to display it in the `Material Texfield` , in this case input text gets checked and modified to only accept time charcters adding `:` at proper position, `Material Textfield` cursor stays at first position, making text showing backwards. Not so in `CupertinoTexfield`.  
 
 
